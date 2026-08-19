@@ -7,14 +7,35 @@
 </head>
 <body>
     <h1>Formulário</h1>
-    <form>
+    <form method="post" action="https://webhook.site/e7dcba88-96b7-4d89-a750-5aecc9926e30">
         <label for="nome">Nome</label>&nbsp;
-        <input type="text" id="nome" name="nome_aluno">
+        <input type="text" id="nome" 
+            name="nome_aluno" required
+            minlength="3"
+            maxlength="10"
+        >
 
         <br>
 
         <label for="nascimento">Data de nascimento</label>
-        <input type="date" id="nascimento" name="data_nascimento">
+        <input type="date" id="nascimento"
+            name="data_nascimento"
+            max="2005-01-01"
+        >
+
+        <br>
+
+        <label for="carro">Carro</label>
+        <select id="carro" name="marca_carro">
+            <option value="">Selecione a marca</option>
+            <option value="volvo">Volvo</option>            
+            <option value="chevrolet">GM</option>
+        </select>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
     </form>
 </body>
 </html>
