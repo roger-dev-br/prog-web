@@ -27,7 +27,6 @@ body {
     display: flex;
     justify-content: center;    
     align-items: center;
-    order: 1;
 }
 
 .item-1 {
@@ -48,5 +47,5 @@ body {
 
 .item-5 {
     background-color: #9b59b6;
-    order: 0;    
+    order: -5;    
 }
