@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.modo-escuro {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+#botao-tema {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.clicavel {
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.destacado {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.clicavel.zoom {
+    font-size: 1.9em;
+}
