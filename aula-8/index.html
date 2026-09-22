@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulação do DOM</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="codigo.js" defer></script>
+</head>
+
+<body>
+    <button id="botao-tema">Modo escuro</button>
+
+    <h1>
+        Manipulação do DOM
+    </h1>
+
+    <p>
+        O DOM <span class="clicavel">(Document Object Model, ou Modelo de Objeto de Documento)</span> é uma
+        representação em formato de árvore que o
+        navegador web cria a partir do seu código HTML.
+    </p>
+
+    <h2 id="titulo2">
+        O que ele faz
+    </h2>
+    <ul>
+        <li>
+            Transforma cada tag, texto e atributo do HTML em um objeto (ou "nó") interativo.
+        </li>
+        <li>
+            Permite que linguagens de programação, como o JavaScript, leiam e modifiquem a página em tempo real sem
+            precisar recarregá-la.
+        </li>
+    </ul>
+
+    <h2>
+        Exemplos Tags HTML
+    </h2>
+
+    <ul id="lista-tags">
+        <li>
+            div
+        </li>
+        <li>
+            p
+        </li>
+        <li>
+            h1
+        </li>
+    </ul>
+    <button id="botao-add">Adicionar tag</button>
+    <button id="botao-remove">Remover tag</button>
+    <button id="botao-destacar">Destacar tag</button>
+
+    <h2>
+        Formulário
+    </h2>
+    <form id="formulario" method="post" action="https://webhook.site/e7dcba88-96b7-4d89-a750-5aecc9926e30">
+        <label for="nome">Nome</label>&nbsp;
+        <input type="text" id="nome" 
+            name="nome_aluno" required
+            minlength="3"
+            maxlength="10"
+        >
+
+        <br>
+
+        <label for="nascimento">Data de nascimento</label>
+        <input type="date" id="nascimento"
+            name="data_nascimento"
+            max="2005-01-01"
+        >
+
+        <br>
+
+        <label for="carro">Carro</label>
+        <select id="carro" name="marca_carro">
+            <option value="">Selecione a marca</option>
+            <option value="volvo">Volvo</option>            
+            <option value="chevrolet">GM</option>
+        </select>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+
+</html>
