@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Nomes</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="codigo.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Nomes</h1>
+        <form id="formulario">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" 
+                        placeholder="Digite o nome" autocomplete="off"
+                >
+                <span id="erro-nome" class="erro"></span>
+            </div>
+            <button type="submit">Salvar</button>
+        </form>
+        <h2>Nomes salvos</h2>
+        <ul id="lista-nomes">
+        </ul>
+    </div>
+</body>
+</html>
