@@ -10,22 +10,21 @@
 </head>
 
 <body>
-    <main class="container">
+    <div class="container">
         <h1>Cadastro de Nomes</h1>
-
-        <form id="formulario" novalidate>
+        <form id="formulario">
             <div class="campo">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite o nome" autocomplete="off">
+                <input type="text" id="nome" name="nome" 
+                        placeholder="Digite o nome" autocomplete="off"
+                >
                 <span id="erro-nome" class="erro"></span>
             </div>
-
             <button type="submit">Salvar</button>
         </form>
-
         <h2>Nomes salvos</h2>
-        <ul id="lista-nomes"></ul>
-    </main>
+        <ul id="lista-nomes">
+        </ul>
+    </div>
 </body>
-
 </html>
