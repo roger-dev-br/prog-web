@@ -1,0 +1,101 @@
+/* Estilo simples para a página sobre cachorros */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdf6ec;
+    color: #333333;
+}
+
+header {
+    background-color: #a9744f;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    text-align: center;
+    display: block;
+}
+
+nav img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #a9744f;
+    border-radius: 10px;
+}
+
+nav a:hover img {
+    border-color: #6b4a30;
+}
+
+nav p {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+article h1 {
+    color: #a9744f;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 0;
+}
+
+.galeria img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border: 3px solid #a9744f;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+a.voltar {
+    display: inline-block;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #a9744f;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.voltar:hover {
+    background-color: #6b4a30;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #a9744f;
+    color: #ffffff;
+    margin-top: 30px;
+}
