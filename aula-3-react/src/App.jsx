@@ -1,33 +1,13 @@
 import './App.css'
 import Header from "./components/Header"
+import Nav from "./components/Nav"
 
 function App() {
   return (
     <>
       <Header />
 
-      <nav>
-        <ul>
-          <li>
-            <a href="pastor-alemao.html">
-              <img src="imagens/pa-001.png" alt="Pastor Alemão" />
-              <p>Pastor Alemão</p>
-            </a>
-          </li>
-          <li>
-            <a href="golden-retriever.html">
-              <img src="imagens/gr-001.png" alt="Golden Retriever" />
-              <p>Golden Retriever</p>
-            </a>
-          </li>
-          <li>
-            <a href="rottweiler.html">
-              <img src="imagens/rw-001.png" alt="Rottweiler" />
-              <p>Rottweiler</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <Nav />
 
       <main>
         <p>
