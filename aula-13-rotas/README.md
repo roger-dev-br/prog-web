@@ -5,7 +5,7 @@
 npm install react-router-dom
 ```
 
-## Estrutura recompendada
+## Estrutura recomendada
 ```
 src/
 ├── pages/
@@ -19,21 +19,27 @@ src/
 ## Criando as telas
 ```
 // src/pages/Home.jsx
-export function Home() {
+function Home() {
   return <h1>Página Inicial</h1>;
 }
+
+export default Home;
 ```
 
 ```
-export function Sobre() {
+function Sobre() {
   return <h1>Sobre Nós</h1>;
 }
+
+export default Sobre;
 ```
 
 ```
-export function NaoEncontrada() {
+function NaoEncontrada() {
   return <h1>404 - Página Não Encontrada</h1>;
 }
+
+export default NaoEncontrada;
 ```
 
 ## Configurando as Rotas e os Links no App.jsx
@@ -50,9 +56,9 @@ Link: Substitui a tag <a> do HTML para navegar sem disparar reload da página.
 ```javascript
 // src/App.jsx
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { Home } from './pages/Home';
-import { Sobre } from './pages/Sobre';
-import { NaoEncontrada } from './pages/NaoEncontrada';
+import Home from './pages/Home';
+import Sobre from './pages/Sobre';
+import NaoEncontrada  from './pages/NaoEncontrada';
 
 export function App() {
   return (
