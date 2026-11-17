@@ -30,7 +30,43 @@ function App() {
   // Então o lugar certo é a função chamada no evento (onSubmit).
   // ---------------------------------------------------------------
   async function buscarCep(evento) {
-    
+    // Evito que o Form faça o Submit
+    evento.preventDefault();
+
+    // Removo qualquer caractere que nao seja um número
+    const cepLimpo = cep.replace(/\D/g, "");
+
+    // Verificar se tem a quantidade certa de digitos
+    if (cepLimpo.length !== 8) {
+      setErro("Digite um CEP com 8 números.");
+      return;
+    }
+
+    setErro("");
+    setCarregando(true);
+
+    // Enviar para a API
+    const resposta = await fetch(`https://viacep.com.br/ws/${cepLimpo}/json/`);
+
+    const dados = await resposta.json();
+
+    // Se der erro mostrar mensagem ao usuário
+    if (dados.erro) {
+      setErro("CEP não encontrado");
+      setCarregando(false);
+      setEndereco(enderecoVazio);
+
+      return;
+    }
+
+    setEndereco({
+        logradouro: dados.logradouro,
+        bairro: dados.bairro,
+        localidade: dados.localidade,
+        uf: dados.uf
+    });
+
+    setCarregando(false);
   }
 
 
